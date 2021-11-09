@@ -7,7 +7,7 @@ import Title from './component/Title';
 function App() {
   const [people, setPeople] = useState(Data);
   const [index, setIndex] = useState(0);
-
+   setPeople(Data);
   useEffect(() => {
     const lastIndex = people.length-1;
     if (index < 0){
